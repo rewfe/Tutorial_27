@@ -10,41 +10,21 @@
 #import "SWRevealViewController.h"
 #import "PhotoViewController.h"
 
-
-
 @interface SidebarViewController ()
-
-@property (nonatomic, strong) NSArray *menuItems;
 
 @end
 
-
-@implementation SidebarViewController
-
-{
-    
+@implementation SidebarViewController {
     NSArray *menuItems;
 }
 
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
     menuItems = @[@"title", @"news", @"comments", @"map", @"calendar", @"wishlist", @"bookmark", @"tag"];
-
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -70,6 +50,10 @@
 }
 
 
+#pragma mark - Navigation
+
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     // Set the title of navigation bar by using the menu items
@@ -81,9 +65,10 @@
     if ([segue.identifier isEqualToString:@"showPhoto"]) {
         UINavigationController *navController = segue.destinationViewController;
         PhotoViewController *photoController = [navController childViewControllers].firstObject;
-        NSString *photoFilename = [NSString stringWithFormat:@"%@_photo", [menuItems objectAtIndex:indexPath.row]];
+        NSString *photoFilename = [menuItems objectAtIndex:indexPath.row];
         photoController.photoFilename = photoFilename;
     }
 }
+
 
 @end

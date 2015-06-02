@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1F-y3-glx">
-                                <rect key="frame" x="0.0" y="64" width="320" height="224"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -136,19 +136,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="i16-qP-t4g">
+                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-8x-3Q7">
                                             <rect key="frame" x="54" y="11" width="144" height="22"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="i16-qP-t4g">
-                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="5D7-fp-3iF" kind="custom" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="jvY-e0-3HI"/>
+                                    <segue destination="5D7-fp-3iF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="OgJ-wH-MMB"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comments" id="u6G-c1-ZoF">
@@ -170,7 +170,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="AvX-LC-N7Q"/>
+                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" customClass="SWRevealViewControllerSeguePushController" id="mvQ-XQ-Aat"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="map" id="UQO-Ol-Bwc">
@@ -180,19 +180,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map.png" translatesAutoresizingMaskIntoConstraints="NO" id="G3V-nW-RnF">
+                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRc-kX-qoR">
-                                            <rect key="frame" x="53" y="11" width="144" height="22"/>
+                                            <rect key="frame" x="54" y="11" width="144" height="22"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map.png" translatesAutoresizingMaskIntoConstraints="NO" id="G3V-nW-RnF">
-                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="lDf-ue-kmD" kind="custom" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="Z8j-f4-6Nb"/>
+                                    <segue destination="lDf-ue-kmD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="cDx-qr-PPl"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="calendar" id="5C0-tM-lW2">
@@ -202,19 +202,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-2N-JSS">
+                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
+                                        </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Calendar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzX-Q1-b6s">
-                                            <rect key="frame" x="52" y="11" width="144" height="22"/>
+                                            <rect key="frame" x="54" y="11" width="144" height="22"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-2N-JSS">
-                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="aBQ-Py-40c"/>
+                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" customClass="SWRevealViewControllerSeguePushController" id="YCK-81-dlH"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="wishlist" id="Cne-Ic-S9C">
@@ -236,7 +236,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="2jC-cN-ysk"/>
+                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" customClass="SWRevealViewControllerSeguePushController" id="Ovp-su-OzL"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bookmark" id="sj6-dl-eK6">
@@ -258,7 +258,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="6UN-jm-iSr"/>
+                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" customClass="SWRevealViewControllerSeguePushController" id="2j6-W4-h0e"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tag" id="9gg-SF-9Ko">
@@ -280,7 +280,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="1nJ-go-UtR"/>
+                                    <segue destination="zJI-su-qIu" kind="custom" identifier="showPhoto" customClass="SWRevealViewControllerSeguePushController" id="e2d-f3-7cS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -310,7 +310,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOb-gn-Bt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815" y="349"/>
+            <point key="canvasLocation" x="883" y="242"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Km2-4s-uzW">
@@ -368,7 +368,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCx-tB-Yoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="-997"/>
+            <point key="canvasLocation" x="965" y="-994"/>
         </scene>
     </scenes>
     <resources>
@@ -387,7 +387,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jvY-e0-3HI"/>
-        <segue reference="2jC-cN-ysk"/>
+        <segue reference="YCK-81-dlH"/>
+        <segue reference="OgJ-wH-MMB"/>
     </inferredMetricsTieBreakers>
 </document>

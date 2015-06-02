@@ -13,24 +13,13 @@
 
 @end
 
-
 @implementation PhotoViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Load image
+    
     self.photoImageView.image = [UIImage imageNamed:self.photoFilename];
+    
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -38,8 +27,9 @@
         [self.sidebarButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+    
+    
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -47,3 +37,4 @@
 }
 
 @end
+

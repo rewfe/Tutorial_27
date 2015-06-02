@@ -155,6 +155,7 @@
 				F4EECF6C177FD51300778578 /* MapViewController.h */,
 				F4EECF6D177FD51300778578 /* MapViewController.m */,
 				F4EECF73177FF90500778578 /* PhotoViewController.h */,
+				F4FE87F91780081300CB3DA8 /* comments_photo.jpg */,
 				F4EECF74177FF90600778578 /* PhotoViewController.m */,
 				F4EECF34177C9A1E00778578 /* Library */,
 				F4EECF18177C99F400778578 /* Supporting Files */,
@@ -188,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				F4EECF58177F384900778578 /* news.png */,
-				F4FE87F91780081300CB3DA8 /* comments_photo.jpg */,
 				F4FE87FD178010F000CB3DA8 /* bookmark_photo.jpg */,
 				F4FE8801178010FA00CB3DA8 /* tag_photo.jpg */,
 				F4FE87FE178010F000CB3DA8 /* calendar_photo.jpg */,
